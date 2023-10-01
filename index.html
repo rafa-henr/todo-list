@@ -5,43 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="images/png" sizes="32x32" href="./imagens/perfil_github-rafa_henr_.jpg">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Outfit:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   
   <title>Portifólio Rafael | Todo app</title>
 
-  <style>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 
-  body{
-    background: rgb(22, 23, 34);
-  }
-
-  .container_BG{
-    z-index: 1;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 37%;
-  }
-
-  .img_BG{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-  }
-
-  .Titulo{
-    font-size: 2.5vw;
-    position: absolute;
-    top: 6%;
-    left: 31%;
-    color:#fff;
-    font-family: Josefin Sans, sans-serif;
-    z-index: 2;
-  }
-
-  </style>
 </head>
 <body>
 
@@ -49,9 +19,28 @@
     <img class="img_BG" src="imagens/bg-desktop-dark.jpg" alt="Imagem de fundo">
   </div>
 
-  <h1 class="Titulo">T O - D O</h1>
+  <h1 class="Titulo">T O D O</h1>
 
-  <!-- Add dynamic number --> items left
+  <img class="IconTema" id="IconTema" src="imagens/icon-sun.svg" alt="Icone Dia/Noite">
+
+<div class="container_Input">
+  <input class="InputTarefas" id="InputTarefas" type="text" placeholder="O que devemos fazer?...">
+  <button class="btnAdd" id="btnAdd">Adicionar</button>
+</div>
+
+  <div class="container_Tarefas">
+
+    <ul class="lista_Tarefas">
+      <li class="Tarefa">
+        <img class="Icon" src="imagens/icon-check.svg" alt="Icone de tarefa feita">
+        <p class="TextosTarefas">Tarefa um</p>
+        <img class="Icon" src="imagens/icon-cross.svg" alt="">
+      </li>
+    </ul>
+
+  </div>
+
+  <!-- Add dynamic number  items left
 
   All
   Active 
@@ -59,7 +48,7 @@
 
   Clear Completed
 
-  Drag and drop to reorder list
+  Drag and drop to reorder list -->
 
 
 </body>
